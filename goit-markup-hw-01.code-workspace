@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../goit-markup-hw-01"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "liveServer.settings.multiRootWorkspaceName": "goit-markup-hw-02"
+  }
+}
