@@ -594,3 +594,57 @@ button {
     height: 300px;
   }
 }
+/* footer */
+
+.footer {
+  display: flex;
+  padding: 100px 0;
+  background-color: #2e2f42;
+}
+.logo-footer {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
+  justify-content: center;
+  padding-left: 102px;
+  width: 116px;
+  height: 24px;
+}
+.logo-studio-footer {
+  color: #f4f4fd;
+  margin-bottom: 16px;
+}
+.text-footer {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+  padding: 0 16px;
+  text-align: left;
+}
+.footer-sociallinks {
+  margin-top: 72px;
+}
+.footer-socialmedia {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+  padding-left: 112px;
+}
+.sociallinks-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
