@@ -248,10 +248,22 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/office.jpg);
+    url(../images/heromob1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heromob2.jpg);
+  }
 }
 .title {
   display: flex;
@@ -296,6 +308,24 @@ button {
   .section-one {
     height: 436px;
     max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herotab1.jpg);
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .section-one {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herotab2.jpg);
+    }
   }
   .title {
     display: flex;
@@ -315,6 +345,25 @@ button {
   .section-one {
     max-width: 1440px;
     height: 600px;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office.jpg);
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .section-one {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herodesk2.jpg);
+    }
   }
   .title {
     display: flex;
@@ -597,7 +646,6 @@ button {
 /* footer */
 
 .footer {
-  display: flex;
   padding: 100px 0;
   background-color: #2e2f42;
 }
@@ -610,12 +658,9 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
-  justify-content: center;
-  padding-left: 102px;
-  width: 116px;
-  height: 24px;
+  text-align: center;
 }
 .logo-studio-footer {
   color: #f4f4fd;
@@ -628,7 +673,6 @@ button {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
-  padding: 0 16px;
   text-align: left;
 }
 .footer-sociallinks {
@@ -641,13 +685,13 @@ button {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-  padding-left: 112px;
+  text-align: center;
 }
 .sociallinks-footer {
   display: flex;
   flex-direction: row;
   gap: 16px;
-  padding-left: 56px;
+  justify-content: center;
   margin-top: 16px;
 }
 .footer-svg {
@@ -677,7 +721,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-left: 122px;
+  text-align: center;
 }
 .form-input {
   border: 1px solid #fff;
@@ -713,9 +757,23 @@ button {
   cursor: pointer;
   border: none;
   margin-top: 16px;
-  margin-left: 61px;
 }
 .btn-tlgrm {
   margin-left: 16px;
   fill: #fff;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footercontainer {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-logo-par {
+    display: block;
+    margin-right: 24px;
+  }
 }
