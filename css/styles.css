@@ -921,7 +921,7 @@ button {
     margin-left: 16px;
   }
   .e-mail-input {
-    width: 453px;
+    max-width: 453px;
     height: 80px;
     margin-top: 0%;
   }
@@ -930,9 +930,29 @@ button {
     margin-left: 0%;
     flex-direction: row;
     gap: 24px;
+    align-items: flex-start;
+  }
+  .form-button {
+    margin-top: 0%;
   }
 }
-
+@media screen and (min-width: 1158px) {
+  .footercontainer {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    width: 1440px;
+    height: 312px;
+  }
+  .sociallinks-footer {
+    display: flex;
+    gap: 16px;
+  }
+  .sociallinks-lifooter {
+    width: 40px;
+    height: 40px;
+  }
+}
 .modal-overlay {
   background: rgba(46, 47, 66, 0.4);
   position: fixed;

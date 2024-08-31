@@ -376,6 +376,8 @@
   align-items: baseline;
 }
 .footer-logo-par {
+  width: 264px;
+  height: 112px;
   margin-right: 120px;
 }
 .footer-socialmedia {
