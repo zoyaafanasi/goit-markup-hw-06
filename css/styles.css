@@ -139,7 +139,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 24px 0;
+
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -190,7 +190,6 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0;
   }
 }
 /* mobile menu */
@@ -257,6 +256,8 @@ button {
 .menu-close {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 8px;
+  height: 8px;
 }
 .mobile-menu-nav {
   margin-bottom: auto;
@@ -304,6 +305,9 @@ button {
   letter-spacing: 0.02em;
   color: #4d5ae5;
 }
+.contacts-link-menu.emailmenu {
+  color: #434455;
+}
 .contacts-ul-menu:hover,
 .contacts-ul-menu:focus {
   color: #404bbf;
@@ -313,7 +317,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-bottom: 40px;
+  margin: auto;
 }
 .sociallinks-li-menu {
   width: 40px;
@@ -331,6 +335,8 @@ button {
 }
 .menu-svg {
   fill: #f4f4fd;
+  width: 24px;
+  height: 24px;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -341,7 +347,8 @@ button {
 .section-one {
   height: 432px;
   max-width: 320px;
-  padding: 0 16px;
+  padding-top: 72px;
+
   margin: 0 auto;
   display: flex;
   background-color: #2e2f42;
@@ -380,7 +387,6 @@ button {
   letter-spacing: 0.02em;
 
   margin-bottom: 72;
-  padding-top: 72px;
 }
 .button {
   display: block;
@@ -442,13 +448,13 @@ button {
     letter-spacing: 0.02em;
     max-width: 496px;
     margin-bottom: 36px;
-    padding-top: 112pxpx;
   }
 }
 @media screen and (min-width: 1158px) {
   .section-one {
     max-width: 1440px;
     height: 600px;
+    padding-top: 188px;
 
     background-image: linear-gradient(
         to bottom,
@@ -479,7 +485,6 @@ button {
     text-align: center;
     letter-spacing: 0.02em;
 
-    padding-top: 188px;
     margin-bottom: 48px;
     max-width: 496px;
   }
@@ -510,7 +515,10 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  margin-top: 96px;
+}
+.feture-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .svg-featurebox {
   display: none;
@@ -533,7 +541,6 @@ button {
 }
 .feture-section {
   display: flex;
-  margin-bottom: 96px;
 }
 @media screen and (min-width: 768px) {
   .feature-ul {
@@ -583,13 +590,14 @@ button {
 }
 /* our team */
 .ourteam-section {
-  margin-top: 96px;
   background-color: #f4f4fd;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .ourteam-title {
   margin-bottom: 72px;
-  padding-top: 96px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
@@ -665,8 +673,7 @@ button {
 }
 /* portfolio */
 .portfolio-section {
-  margin-top: 96px;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .portfolio-ul {
   display: flex;
@@ -873,8 +880,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footercontainer {
-    width: 584px;
-
     align-items: stretch;
     display: flex;
     flex-wrap: wrap;
@@ -941,9 +946,8 @@ button {
     display: flex;
     align-items: baseline;
     flex-direction: row;
-    width: 1440px;
-    height: 312px;
   }
+
   .sociallinks-footer {
     display: flex;
     gap: 16px;
@@ -951,6 +955,12 @@ button {
   .sociallinks-lifooter {
     width: 40px;
     height: 40px;
+  }
+  .footer-logo-par {
+    margin-right: 120px;
+  }
+  .footer-sociallinks {
+    margin-right: auto;
   }
 }
 .modal-overlay {
